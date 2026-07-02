@@ -8,5 +8,11 @@ jobs:
     steps:
       - name: Hello World
         run: echo "Hello to the GH-200 workshop"
+
+      - name: checkout source
+        uses: actions/checkout@v6
+
+      - name: list files
+        run:  ls -al
         
   
